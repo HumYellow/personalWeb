@@ -4,9 +4,9 @@
 	</header>
 </template>
 <script>
+
 </script>
 <style lang="sass">
 $red:#ee2624;
-$fontSize: 12px;
- header{background-color:$red; color:#fff; padding:5px 0; font-size:$fontSize;}
+ header{background-color:$red; color:#fff; padding:5px 0; font-size:1rem}
 </style>
