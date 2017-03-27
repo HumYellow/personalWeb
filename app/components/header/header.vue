@@ -1,6 +1,6 @@
 <template>
 	<header>
-	<span>上海市长宁区天山西路</span>
+		<span>上海市长宁区天山西路</span>
 	</header>
 </template>
 <script>
