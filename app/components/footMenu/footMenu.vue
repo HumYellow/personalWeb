@@ -15,7 +15,8 @@
 	</footer>
 </template>
 <script>
-
+import R from '../../common/js/touch.js'
+console.info(R.picPath)
 </script>
 <style lang="sass">
 .footMenu{border-top:1px solid #dcdcdc; position:fixed; bottom:0; left:0; width:100%; padding:5px 0; background:#fff;}
