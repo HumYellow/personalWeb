@@ -1,23 +1,23 @@
 <template>
 	<div id="app">
 		<div class="swiper-container">
-		<div class="swiper-wrapper">
+			<div class="swiper-wrapper">
 
-		<div class="swiper-slide">
-		  <img class="imgload" src="http://wheelysoss.oss-cn-shanghai.aliyuncs.com/img/mchproduct/s4116aea6_15a3fc17aca__8000.jpg?v=2017032414T" alt="首页banner图片01">
-		</div>
-		<div class="swiper-slide">
-		  <img class="imgload" src="http://wheelysoss.oss-cn-shanghai.aliyuncs.com/img/mchproduct/s4116aea6_15a3fc17aca__8000.jpg?v=2017032414T" alt="首页banner图片02">
-		</div>
-		<div class="swiper-slide">
-		  <img class="imgload" src="http://wheelysoss.oss-cn-shanghai.aliyuncs.com/img/mchproduct/s4116aea6_15a3fc17aca__8000.jpg?v=2017032414T" alt="首页banner图片02"></div>
-		</div>
-		<!-- 如果需要分页器 -->
-		<!-- <div class="swiper-pagination"></div> -->
+			<div class="swiper-slide">
+			  <img class="imgload" src="http://wheelysoss.oss-cn-shanghai.aliyuncs.com/img/mchproduct/s4116aea6_15a3fc17aca__8000.jpg?v=2017032414T" alt="首页banner图片01">
+			</div>
+			<div class="swiper-slide">
+			  <img class="imgload" src="http://wheelysoss.oss-cn-shanghai.aliyuncs.com/img/mchproduct/s4116aea6_15a3fc17aca__8000.jpg?v=2017032414T" alt="首页banner图片02">
+			</div>
+			<div class="swiper-slide">
+			  <img class="imgload" src="http://wheelysoss.oss-cn-shanghai.aliyuncs.com/img/mchproduct/s4116aea6_15a3fc17aca__8000.jpg?v=2017032414T" alt="首页banner图片02"></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<!-- <div class="swiper-pagination"></div> -->
 
-		<!-- 如果需要导航按钮 -->
-		<!-- <div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div> -->
+			<!-- 如果需要导航按钮 -->
+			<!-- <div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div> -->
 		</div>
 	</div>
 </template>
