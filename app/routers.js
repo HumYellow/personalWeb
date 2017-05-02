@@ -6,6 +6,7 @@ import Index from './page/index/index.vue'
 import ShopList from './page/shopList/shopList.vue'
 import Find from './page/find/find.vue'
 import OrderList from './page/orderList/orderList.vue'
+import MyCenter from './page/myCenter/myCenter.vue'
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
@@ -28,6 +29,11 @@ const router = new VueRouter({
         	path: '/orderList', 
         	name:'orderList',
         	component:OrderList
+        },
+     	{
+        	path: '/myCenter', 
+        	name:'myCenter',
+        	component:MyCenter
         }
     ]
 })

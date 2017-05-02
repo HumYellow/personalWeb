@@ -67,6 +67,9 @@ module.exports = {
         presets: ['es2015', 'stage-0'],  
         plugins: ['transform-runtime']  
     },
+    externals: {
+       "BMap": "BMap" 
+    }, 
     plugins: [
         new HtmlWebpackPlugin({
             filename: '../index.html',

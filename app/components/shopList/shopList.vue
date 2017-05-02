@@ -21,7 +21,7 @@
             </li>
 		</ul>
         <div class="close" v-if="isNull">
-            <div class="c-img"><img src="${picPath}wps/dummystatus/store/close.png"></div>
+            <div class="c-img"><img :src="picPath+'wps/dummystatus/storeClose.png'"></div>
             <p class="k-p">我们已经打烊啦，明天见咯^-^</p>
         </div> 
 	</div>
@@ -34,12 +34,13 @@ export default {
         return {
             shopList:[],
             map:[],
-            isNull:false
+            isNull:false,
+            picPath:global.picPath
         }
     },
     mounted(){
         var _that = this
-        Vue.http.get("http://test.wheelyschina.com/wheelyscafe/ajax/shop/queryList.xhtml").then(
+        Vue.http.get(global.basePath+"ajax/shop/queryList.xhtml").then(
             function (res) {
                 // 处理成功的结果
                 _that.shopList = res.body.data.shopList

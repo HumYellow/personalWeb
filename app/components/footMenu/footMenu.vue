@@ -14,7 +14,7 @@
 		</div>
 		<div class="footMenuMod">
 			<a v-if="menuType=='mine'"><img width="25%" :src="picPath+'wps/icon/icon-mine-c.png'" /></a>
-			<a v-else href="${basePath}news/newsList.xhtml"><img width="25%" :src="picPath+'wps/icon/icon-mine.png'" /></a>
+			<router-link to="/myCenter" v-else><img width="25%" :src="picPath+'wps/icon/icon-mine.png'" /></router-link>
 		</div>
 	</footer>
 </template>

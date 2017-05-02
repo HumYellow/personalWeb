@@ -2,8 +2,6 @@
 @import '../../common/scss/mobile.scss'
 </style>
 <script>
-import Vue from 'vue'
-import VueResource from 'vue-resource'
 
 </script>
 <template>
