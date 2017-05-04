@@ -28,7 +28,8 @@ compiler.plugin('compilation', function (compilation) {
         cb()
     })
 })
-
+// 注册本地数据
+app.use('/mock',express.static('./mock'))
 // 注册中间件
 app.use(devMiddleware)
 // 注册中间件
