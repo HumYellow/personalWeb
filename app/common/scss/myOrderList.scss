@@ -1,6 +1,7 @@
 body{padding-bottom:50px;}
 header{background:#ee2624;padding:10px 0; font-size:1.125rem; text-align:center; color:#fff;}
 .orderBox{margin:10px 3%; padding:10px 3%; border-radius:3px; background:#fff;box-shadow:0 1px 1px #d7d7d7;}
+.orderBox a{display:block;}
 .orderBoxDetails .ui_pic{width:20%;overflow:hidden; border-radius:5%; margin-right:5%;min-height:60px}
 .orderBoxDetails .ui_text .shopName{color:#333; font-size:1.125rem; font-weight:bold;}
 .orderBoxDetails  .modDetails{width:75%; margin:5px 0; line-height:30px; color:#7a7a7a;}

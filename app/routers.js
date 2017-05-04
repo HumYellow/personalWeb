@@ -7,6 +7,8 @@ import ShopList from './page/shopList/shopList.vue'
 import Find from './page/find/find.vue'
 import OrderList from './page/orderList/orderList.vue'
 import MyCenter from './page/myCenter/myCenter.vue'
+import OrderDetail from './page/orderDetail/orderDetail.vue'
+
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
@@ -34,6 +36,11 @@ const router = new VueRouter({
         	path: '/myCenter', 
         	name:'myCenter',
         	component:MyCenter
+        },
+     	{
+        	path: '/orderDetail/:id', 
+        	name:'orderDetail',
+        	component:OrderDetail
         }
     ]
 })

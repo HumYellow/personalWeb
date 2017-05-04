@@ -2,7 +2,7 @@
     <ul id="orderList">
         <li v-for="orderBox in orderList">
             <div class="orderBox">
-                <a href="${basePath}order/orderDetail.xhtml?tradeno=$orderVo.tradeno" >
+                <router-link :to="'/orderDetail/'+orderBox.id">
                 <div class="orderBoxDetails ui_media">
                     <div class="ui_pic">
                         <img width="100%" :src="picPath+orderBox.shop.shopimg" />
@@ -19,7 +19,7 @@
                         </div>
                     </div>
                 </div>
-                </a>
+                </router-link>
                 <div class="clear orderTime">
                     <span class="left">{{orderBox.createtime}}</span>
                     <a class="right ml10 goEvaluate" href="${basePath}home/writeOrderComment.xhtml?tradeno=$orderVo.tradeno">去评价</a>
