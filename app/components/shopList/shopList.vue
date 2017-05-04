@@ -5,7 +5,7 @@
                 <a href="${basePath}shop/shopDetail.xhtml?shopid=$shop.shopid&isreset=Y&v=$VmUtils.version">
                     <div class="storeLogo ui_media">
                         <span class="ui_pic">
-                            <img width="100%" height="auto" :src="storeList.shopimg" />
+                            <img width="100%" height="auto" :src="picPath+storeList.shopimg" />
                         </span>
                         <div class="ui_text">
                             <h3>{{storeList.shopname}}</h3>
