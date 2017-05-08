@@ -1,5 +1,5 @@
-<style>
-@import '../../common/scss/myCenter.scss'
+<style scoped>
+    @import '../../common/scss/myCenter.scss'
 </style>
 <template id="myCenter">
     <div>

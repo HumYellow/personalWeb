@@ -1,10 +1,9 @@
-<style>
-@import '../../common/scss/orderDetail.scss'
+<style lang="sass">
+    @import '../../common/scss/orderDetail.scss'
 </style>
 <template>
     <div>
         <headerBox></headerBox>
-        <template>
             <div class="orderDetail">
                 <div class="orderDetailBody">
                    <ul>
@@ -82,7 +81,6 @@
                     <a class="close" href="${basePath}shop/shopDetail.xhtml?shopid=$orderVo.shopid">再来一单</a>
                 </div>
            </div>
-        </template>
     </div>
 </template>
 <script>
