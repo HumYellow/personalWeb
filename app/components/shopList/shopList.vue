@@ -40,11 +40,10 @@ export default {
     },
     mounted(){
         var _that = this
-        Vue.http.get(global.basePath+"ajax/shop/queryList.xhtml").then(
+        Vue.http.get(global.basePath+"shop/queryList.xhtml").then(
             function (res) {
                 // 处理成功的结果
                 _that.shopList = res.body.data.shopList;
-                console.info(_that.shopList)
                 _that.map = res.body.data.citymap
                 if(_that.shopList.length == 0){
                 	_that.isNull=true

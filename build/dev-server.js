@@ -29,7 +29,7 @@ compiler.plugin('compilation', function (compilation) {
     })
 })
 // 注册本地数据
-app.use('/mock',express.static('./mock'))
+app.use('/ajax',express.static('./mock'))
 // 注册中间件
 app.use(devMiddleware)
 // 注册中间件
@@ -42,5 +42,4 @@ app.listen(8888, function (err) {
         return
     }
     console.log('Listening at http://localhost:8888')
-    console.log('运行成功')
 })

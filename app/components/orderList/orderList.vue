@@ -42,7 +42,7 @@ export default {
     },
     mounted(){
         var _that = this
-        Vue.http.get(global.mockPath+"orderList.json").then(
+        Vue.http.get(global.basePath+"orderList.html").then(
             function (res) {
                 // 处理成功的结果
                 _that.orderList = res.body.retval;
