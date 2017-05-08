@@ -42,4 +42,5 @@ app.listen(8888, function (err) {
         return
     }
     console.log('Listening at http://localhost:8888')
+    console.log('运行成功')
 })

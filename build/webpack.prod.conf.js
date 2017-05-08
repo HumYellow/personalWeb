@@ -13,7 +13,8 @@ config.vue = {
 config.plugins = [
     new webpack.DefinePlugin({
         'process.env': {
-            NODE_ENV: '"production"'
+            NODE_ENV: '"production"',
+            API_ROOT:'"http://www.wheelyschina.com/wheelyscafe/"'
         }
     }),
     // 压缩代码
@@ -27,7 +28,7 @@ config.plugins = [
     new ExtractTextPlugin("../[name].[contenthash].css"),
     new HtmlWebpackPlugin({
         filename: '../index.html',
-        template: path.resolve(__dirname, '../app/index/index.html'),
+        template: path.resolve(__dirname, '../app/app.html'),
         inject: true
     }),
     new webpack.optimize.CommonsChunkPlugin({
