@@ -1,6 +1,7 @@
 // nodejs 中的path模块
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var webpack = require('webpack');
 
@@ -15,7 +16,7 @@ module.exports = {
     // 输出配置
     output: {
         // 输出路径是 myProject/output/static
-        path: path.resolve(__dirname, '../output/static'),
+        path: path.resolve(__dirname, '../dist/static'),
         publicPath: 'static/',//index引用路径
         filename: '[name].[hash].js',
         chunkFilename: '[id].[chunkhash].js'

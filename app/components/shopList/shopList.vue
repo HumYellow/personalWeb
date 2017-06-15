@@ -2,22 +2,22 @@
 	<div id="storeBox">
 		<ul v-if="!isNull" id="storeList" class="storeList" data-address="$!useraddress">
             <li v-for="storeList in shopList">
-                <a href="${basePath}shop/shopDetail.xhtml?shopid=$shop.shopid&isreset=Y&v=$VmUtils.version">
+                <router-link :to="'/shopList/'+storeList.shopid">
                     <div class="storeLogo ui_media">
                         <span class="ui_pic">
                             <img width="100%" height="auto" :src="picPath+storeList.shopimg" />
                         </span>
                         <div class="ui_text">
-                            <h3>{{storeList.shopname}}</h3>
+                            <h3>{{storeList.name}}</h3>
                             <p class="distance">$!VmUtils.getDistance($!shop.distance)<i>km</i></p>
                             <div class="storeAge mt5">
                                 <!-- <h4>Rating</h4> -->
-                                <p class="markAge clear"><span class="ageNum left">店址 : {{storeList.shopaddress}}</span></p>
+                                <p class="markAge clear"><span class="ageNum left">店址 : {{storeList.address}}</span></p>
                             </div>
                         </div>
                     </div>
                     <span class="cityTag">{{storeList.citycode}}</span>
-                </a>
+                </router-link>
             </li>
 		</ul>
         <div class="close" v-if="isNull">
@@ -40,7 +40,7 @@ export default {
     },
     mounted(){
         var _that = this
-        Vue.http.get(global.basePath+"shop/queryList.xhtml").then(
+        Vue.http.get(global.basePath+"queryList.html").then(
             function (res) {
                 // 处理成功的结果
                 _that.shopList = res.body.data.shopList;

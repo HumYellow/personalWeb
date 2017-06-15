@@ -4,10 +4,11 @@ import VueResource from 'vue-resource'
 
 import Index from './page/index/index.vue'
 import ShopList from './page/shopList/shopList.vue'
+import ShopDetail from './page/shopDetail/shopDetail.vue'
 import Find from './page/find/find.vue'
 import OrderList from './page/orderList/orderList.vue'
-import MyCenter from './page/myCenter/myCenter.vue'
 import OrderDetail from './page/orderDetail/orderDetail.vue'
+import MyCenter from './page/myCenter/myCenter.vue'
 
 
 Vue.use(VueRouter);
@@ -21,26 +22,26 @@ const router = new VueRouter({
         	path: '/', 
         	name:'shopList',
         	component:ShopList
-        },
-     	{
+        },{
+            path: '/shopDetail/:id', 
+            name:'shopDetail',
+            component:ShopDetail
+        },{
         	path: '/find', 
         	name:'find',
         	component:Find
-        },
-     	{
+        },{
         	path: '/orderList', 
         	name:'orderList',
         	component:OrderList
-        },
-     	{
+        },{
+            path: '/orderDetail/:id', 
+            name:'orderDetail',
+            component:OrderDetail
+        },{
         	path: '/myCenter', 
         	name:'myCenter',
         	component:MyCenter
-        },
-     	{
-        	path: '/orderDetail/:id', 
-        	name:'orderDetail',
-        	component:OrderDetail
         }
     ]
 })

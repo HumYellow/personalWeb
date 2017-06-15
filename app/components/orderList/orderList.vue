@@ -3,22 +3,25 @@
         <li v-for="orderBox in orderList">
             <div class="orderBox">
                 <router-link :to="'/orderDetail/'+orderBox.id">
-                <div class="orderBoxDetails ui_media">
-                    <div class="ui_pic">
-                        <img width="100%" :src="picPath+orderBox.shop.shopimg" />
-                    </div>
-                    <div class="ui_text ui_media modDetails">
+                    <div class="orderBoxDetails ui_media">
                         <div class="ui_pic">
-                            <p class="shopName">{{orderBox.ordertitle}}</p>
-                            <p v-if="orderBox.detailList.length == '1'">{{orderBox.detailList[0].productname}}</p>
-                            <p v-else class="clear"><span class="left">{{orderBox.detailList[0].productname}}等{{orderBox.detailList.length}}种</span><img class="left" style="display:inline-block; height:1rem; margin:8px 5px;" :src="picPath+'wps/myCenter/ordTb-icn.png'" /></p>
-                         </div>
-                        <div class="ui_text">
-                            <p>{{orderBox.orderStatus}}</p>
-                            <p class="num">￥{{orderBox.netpaid}}</p>
+                            <img width="100%" :src="picPath+orderBox.shop.shopimg" />
+                        </div>
+                        <div class="ui_text ui_media modDetails">
+                            <div class="ui_pic">
+                                <p class="shopName">{{orderBox.ordertitle}}</p>
+                                <p v-if="orderBox.detailList.length == '1'">{{orderBox.detailList[0].productname}}</p>
+                                <p v-else class="clear">
+                                    <span class="left">{{orderBox.detailList[0].productname}}等{{orderBox.detailList.length}}种</span>
+                                    <img class="left" style="display:inline-block; height:1rem; margin:8px 5px;" :src="picPath+'wps/myCenter/ordTb-icn.png'" />
+                                </p>
+                             </div>
+                            <div class="ui_text">
+                                <p>{{orderBox.orderStatus}}</p>
+                                <p class="num">￥{{orderBox.netpaid}}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </router-link>
                 <div class="clear orderTime">
                     <span class="left">{{orderBox.createtime}}</span>

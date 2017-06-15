@@ -7,29 +7,25 @@
             <div class="orderDetail">
                 <div class="orderDetailBody">
                    <ul>
-                    #foreach($detail in $orderVo.detailList)
                          <li class="ui_flex">
                            <div class="liMod">
-                              <p>$detail.productname $!detail.description</p>
+                              <p>{{$route.params.id}}</p>
                               <P>$detail.productename</P>
                            </div>
-                            #if($discount.type eq 'ONEBUYONE' && $detail.discountnum > 0)
-                                <div class="liMod">X$detail.discountnum</div>
-                            #else
-                                <div class="liMod">X$detail.quantity</div>
-                            #end
+                             <div class="liMod">X$detail.discountnum</div>
                             
-                            #if($discount.type eq 'ONEBUYONE' && $detail.discountnum > 0)
-                            <div class="liMod">￥$VmUtils.getAmount($detail.paidfee)</div>
-                            #else
-                                #if($detail.productid eq 1031)
                                 <div class="liMod o-red">赠送</div>
-                                #else
-                                <div class="liMod">￥$VmUtils.getAmount($detail.totalfee)</div>
-                                #end
-                            #end
                          </li>
-                        #if($discount.type eq 'ONEBUYONE' && $detail.discountnum > 0)
+                         <li class="ui_flex">
+                           <div class="liMod">
+                              <p>{{$route.params.id}}</p>
+                              <P>$detail.productename</P>
+                           </div>
+                             <div class="liMod">X$detail.discountnum</div>
+                            
+                                <div class="liMod o-red">赠送</div>
+                         </li>
+                       <!--  #if($discount.type eq 'ONEBUYONE' && $detail.discountnum > 0)
                         <li class="ui_flex">
                            <div class="liMod">
                               <p>$detail.productname $!detail.description</p>
@@ -38,15 +34,14 @@
                             <div class="liMod">X$detail.discountnum</div>
                             <div class="liMod o-red">赠送</div>
                          </li>
-                        #end
-                    #end
+                        #end -->
                    </ul>
-                    #if($orderVo.discount gt 0 && $discount.type ne 'ONEBUYONE')
+                 <!--    #if($orderVo.discount gt 0 && $discount.type ne 'ONEBUYONE')
                    <div class="discount clear">
                         <div class="left">$!orderVo.disreason</div>
                         <div class="right" style="font-size:1rem; ">-￥$VmUtils.getAmount($orderVo.discount)</div>
                     </div>
-                    #end
+                    #end -->
                     <div style="border:none;" class="discount clear">
                         <div class="right" style="font-size:1.14rem;">实付￥$VmUtils.getAmount($orderVo.payfee)</div>
                     </div>

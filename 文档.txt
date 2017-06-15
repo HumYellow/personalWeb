@@ -1,5 +1,0 @@
-打包 
-npm run build
-运行本地
-npm run dev
-//webpack --display-modules --display-chunks --config build/webpack.config.js 
