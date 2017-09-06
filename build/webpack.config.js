@@ -84,6 +84,6 @@ module.exports = {
             template: path.resolve(__dirname, '../app/app.html'),
             inject: true
         }),
-        new ExtractTextPlugin("style.css")
+        new ExtractTextPlugin("style.css"),
     ]
 }

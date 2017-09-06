@@ -10,7 +10,7 @@ config.plugins = [
     new webpack.DefinePlugin({
         'process.env': {
             NODE_ENV: '"production"',
-            API_ROOT:'"//localhost:8888/"'
+            API_ROOT:'"//localhost:6666/"'
         }
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
